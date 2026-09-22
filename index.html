@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>李峋同款动态跳动爱心 ❤️ 点燃我，温暖你</title>
+  <title>❤️ 专属牛利亚的动态爱心 · 点燃我，温暖你</title>
   <style>
     * {
       box-sizing: border-box;
@@ -241,7 +241,7 @@
       bottom: 60px;
       left: 50%;
       transform: translateX(-50%) translateY(20px);
-      background: rgba(25, 20, 35, 0.92);
+      background: rgba(255, 255, 255, 0.92);
       border: 1px solid rgba(255, 105, 180, 0.4);
       backdrop-filter: blur(12px);
       color: #fff;
@@ -313,7 +313,7 @@
 
   <!-- 底部交互提示 -->
   <div class="footer-hint" id="footerHint">
-    点击任意位置绽放小爱心 · 双击或右上角修改名字并复制专属链接
+    点燃我，温暖你 · 专属牛利亚的浪漫爱心 · 点击任意位置绽放小爱心
   </div>
 
   <!-- 吐司通知组件 -->
@@ -325,11 +325,11 @@
       <div class="modal-title">💖 自定义专属爱心</div>
       <div class="form-group">
         <label>爱心主标题 (心心正中，留空则不显示)</label>
-        <input type="text" class="form-input" id="inputMainText" placeholder="如：点燃我，温暖你 / 宝宝" maxlength="16">
+        <input type="text" class="form-input" id="inputMainText" placeholder="如：牛利亚 / 点燃我，温暖你" maxlength="16">
       </div>
       <div class="form-group">
         <label>英文副标题 / 浪漫寄语 (留空则不显示)</label>
-        <input type="text" class="form-input" id="inputSubText" placeholder="如：I Love You / 永远爱你" maxlength="28">
+        <input type="text" class="form-input" id="inputSubText" placeholder="如：I Love You Forever · 只属于你" maxlength="28">
       </div>
       <div class="modal-actions">
         <button class="btn btn-copy" id="btnCopyShareLink">🔗 复制专属链接</button>
@@ -391,13 +391,13 @@
       }
     };
 
-    // 读取 URL 参数以支持一键分享定制: ?text=宝宝&sub=永远爱你&theme=pink
+    // 读取 URL 参数以支持一键分享定制: ?text=牛利亚&sub=只属于你&theme=pink
     const urlParams = new URLSearchParams(window.location.search);
     let themeKey = urlParams.get('theme') || 'pink';
     let currentTheme = THEMES[themeKey] || THEMES.pink;
 
-    let customMainText = urlParams.get('text') !== null ? urlParams.get('text') : (urlParams.get('name') !== null ? urlParams.get('name') : "❤️ 点燃我，温暖你");
-    let customSubText = urlParams.get('sub') !== null ? urlParams.get('sub') : "I Love You Forever";
+    let customMainText = urlParams.get('text') !== null ? urlParams.get('text') : (urlParams.get('name') !== null ? urlParams.get('name') : "❤️ 牛利亚");
+    let customSubText = urlParams.get('sub') !== null ? urlParams.get('sub') : "I Love You Forever · 只属于你";
 
     let width = 0;
     let height = 0;
